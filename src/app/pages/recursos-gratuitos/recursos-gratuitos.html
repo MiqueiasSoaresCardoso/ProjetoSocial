@@ -1,0 +1,21 @@
+<h1>Recursos Gratuitos para você baixar e usar na sua igreja e comunidade</h1>
+
+<div *ngIf="listaDeRecursos && listaDeRecursos.length > 0" class="recursos-lista row">
+    <div *ngFor="let recurso of listaDeRecursos" class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+        <div class="card h-100">
+            <img *ngIf="recurso.imagemUrl" [src]="recurso.imagemUrl" class="card-img-top" 
+            [alt]="recurso.titulo" style="max-height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{recurso.titulo}}</h5>
+                <p class="card-text">{{recurso.descricao}}</p>
+                <a [href]="recurso.arquivoPdf" [download]="recurso.nomeArquivoBaixado" class="btn btn-success mt-auto">
+                    Baixar Recurso
+                </a>
+            </div>
+        </div>
+    </div>
+
+<ng-template #semRecursos>
+    <p>Nenhum recurso gratuito disponível no momento. Volte em breve!</p>
+</ng-template>
+</div>

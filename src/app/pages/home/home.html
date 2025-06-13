@@ -1,0 +1,60 @@
+
+ <h1>{{msgBoasVindas}}</h1>
+
+ <p>{{getDescricaoCompleta()}}</p>
+
+ <!-- Backdrop -->
+
+<div *ngIf="imgVisivel" class="modal-backdrop"></div>
+
+<!-- Modal -->
+<div *ngIf="imgVisivel" class="modalangular" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img [src]="imagemContribuicao" [alt]="'Banner contribuição do projeto ' + nomeDoProjeto" class="img-fluid">
+      </div>
+      <div class="modal-footer mdbtn">
+        <button (click)="alterarBanner()" type="button" class="btn btn-secondary" style="margin: 10px; background-color: red;">Fechar</button>
+        <button type="button" class="btn btn-primary" routerLink="/contribua" style="background-color: green;">Contribuir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <img  
+ style="max-width: 100%; height: auto; margin-bottom: 20px;">
+
+<div id="body" class="container">
+    <div class="card card_pj" style="width: 18rem;">
+  <img src="assets/img/missao.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">
+        Levar a palavra de Deus para as crianças de forma lúdica e significativa. 
+        Trabalhando em prol do crescimento do reino, através da proclamação 
+        do evangelho em sua integralidade. Além de instigar a participação de 
+        jovens e adolescentes cristãos no Ide do Senhor.</p>
+  </div>
+   <div class="card card_pj" style="width: 18rem;">
+  <img src="assets/img/missao.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">
+        Levar a palavra de Deus para as crianças de forma lúdica e significativa. 
+        Trabalhando em prol do crescimento do reino, através da proclamação 
+        do evangelho em sua integralidade. Além de instigar a participação de 
+        jovens e adolescentes cristãos no Ide do Senhor.</p>
+  </div>
+   <div class="card card_pj" style="width: 18rem;">
+  <img src="assets/img/missao.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">
+        Levar a palavra de Deus para as crianças de forma lúdica e significativa. 
+        Trabalhando em prol do crescimento do reino, através da proclamação 
+        do evangelho em sua integralidade. Além de instigar a participação de 
+        jovens e adolescentes cristãos no Ide do Senhor.</p>
+  </div>
+</div>
+   </div>
+
+
+
